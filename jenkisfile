@@ -12,7 +12,7 @@ pipeline {
             } 
          stage( "checkoutfrom SCM "){
                  steps{
-                  gir branch: 'master', credentialsId: 'github', url: 'https://github.com/Jagadishdevopstraining/maven-web-application.git'
+                  gir branch: 'main', credentialsId: 'github', url: 'https://github.com/Jagadishdevopstraining/maven-web-application.git'
                    }
             }
          stage("Build applictions"){
